@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keskustelusivu</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+        form { border: 1px solid #ccc; padding: 20px; border-radius: 5px; }
+        textarea { width: 100%; height: 100px; }
+        input, select, button { display: block; margin: 10px 0; width: 100%; padding: 5px; }
+        .comment { border-bottom: 1px solid #ddd; padding: 10px 0; }
+        nav a { margin-right: 10px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Etusivu</a>
+        <a href="keskustelu.html">Keskustelu</a>
+        <a href="keskustelu.html">Keskustelu</a>
+    </nav>
+    
+    <h2>Keskustelusivu</h2>
+    <form>
+        <label for="message">Kirjoita kommentti:</label>
+        <textarea id="message" required></textarea>
+
+        <label for="email">Sähköpostiosoite:</label>
+        <input type="email" id="email" required>
+
+        <label for="birthdate">Syntymäpäivä:</label>
+        <input type="date" id="birthdate" required>
+
+        <label for="type">Valitse viestin tyyppi:</label>
+        <select id="type">
+            <option value="comment">Kommentti</option>
+            <option value="question">Kysymys</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="consent" required>
+            Hyväksyn, että tietojani voidaan käyttää markkinointiin
+        </label>
+
+        <button type="submit">Lähetä</button>
+    </form>
+    
+    <h3>Aiemmat kommentit</h3>
+    <div class="comment">
+        <p><strong>Päivämäärä:</strong> 25.03.2025 14:30</p>
+        <p><strong>Sähköposti:</strong> kakkeli@posti.com</p>
+        <p>Siis omg tää on paras sivusto ikinä :DD</p>
+    </div>
+    <div class="comment">
+        <p><strong>Päivämäärä:</strong> 24.03.2025 12:10</p>
+        <p><strong>Sähköposti:</strong> topifan123@esimerkki.com</p>
+        <p>Topi on paras opettaja!</p>
+    </div>
+    <div class="comment">
+        <p><strong>Päivämäärä:</strong> 23.03.2025 18:45</p>
+        <p><strong>Sähköposti:</strong> rossupossu@gmail.fi</p>
+        <p>Tosi kivaa jeeee.</p>
+    </div>
+    <div class="comment">
+        <p><strong>Päivämäärä:</strong> 22.03.2025 10:15</p>
+        <p><strong>Sähköposti:</strong> vieras@posti.com</p>
+        <p>Kiitos hyvistä vinkeistä! :D</p>
+    </div>
+    <div class="comment">
+        <p><strong>Päivämäärä:</strong> 21.03.2025 16:00</p>
+        <p><strong>Sähköposti:</strong> anonyymi@netti.fi</p>
+        <p>Onko täällä joku joka osaisi vastata kysymykseeni? :C </p>
+    </div>
+</body>
+</html>
