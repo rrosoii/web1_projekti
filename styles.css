@@ -1,0 +1,158 @@
+/* perus */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 64px;
+    background-color: #f0fcff;
+    color: #3b386d;
+}
+
+/* navigaatio */
+nav {
+    margin-bottom: 20px;
+}
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #03487a;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/*section*/
+section {
+    border: 1px solid #d6e6f0;
+    background-color: #f7fcff; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* heading */
+h1, h2 {
+    margin-top: 20px;
+    color: #4f75cc;
+}
+h3, h4 {
+    margin-top: 20px;
+    color:#87a0da
+}
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+
+/* työkokemus toggle */
+.tyopaikka {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.2s;
+}
+.tyopaikka:hover {
+    background-color: #f0f0f0;
+}
+.kuvaus {
+    display: none;
+    margin-top: 10px;
+}
+
+/* kommentti */
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* kommentti dialogi */
+#comment-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    z-index: 1001;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* formit */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+textarea,
+input,
+select {
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+}
+button {
+    padding: 8px 12px;
+    background-color: #72a9fc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #9dc1db;
+}
+
+/* footter */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+.profiili-alku {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between image and text */
+    margin-top: 20px;
+}
+
+.profiili-alku img {
+    width: 120px; /* adjust as needed */
+    height: auto;
+    border-radius: 10px; /* optional: rounded corners */
+}
+
+.profiili-alku h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.profiili-text h4 {
+    margin: 5px 0 0;
+    font-weight: normal;
+}
