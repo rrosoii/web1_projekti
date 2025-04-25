@@ -8,6 +8,13 @@ body {
     color: #3b386d;
 }
 
+
+header {
+    color: #8c8f96;
+    text-align: center;
+  }  
+
+  
 /* navigaatio */
 nav {
     margin-bottom: 20px;
@@ -133,6 +140,7 @@ button {
 button:hover {
     background-color:#dbbd29
 }
+
 
 /* footter */
 footer {

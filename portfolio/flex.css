@@ -1,8 +1,10 @@
 .flex-horizontal {
     display: flex;
     gap: 30px;
-    padding: 30px;
+    padding: 0;
     justify-content: center;
+    max-width: 800px; 
+    margin: 20px auto;
   }
   
   .flex-vertical {
