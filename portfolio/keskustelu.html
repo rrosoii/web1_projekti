@@ -6,7 +6,7 @@
     <meta name="keywords" content="kommenttipalsta, keskustelu, harjoitus">
     <meta name="description" content="Sivu sisältää toimimattoman kommenttipalstan alun.">
     <meta name="author" content="Rosanna N.">
-    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href= "portfoliogrid.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <title>Keskustelusivu</title>
@@ -16,6 +16,8 @@
     <header>
         <p>Rosanna Nikupeteri TIEV24N</p>
     </header>
+
+    
 <main>
     <h1>Rosannan Sivu 💤</h1>
     <nav>
@@ -24,38 +26,39 @@
         <a href="index.html">Portfolio</a>
     </nav>
 
-    <h2>Keskustelusivu</h2>
-    
-    <button onclick="openDialog()">Kommentoi</button>
+    <div class="layout">
+        <div class="sivunav">
+            <ul>
+                <li><a href="flex.html">Flex Harjoitus</a></li>
 
-    <div id="overlay" onclick="closeDialog()"></div>
-    <div id="comment-dialog">
-        <h3>Kirjoita kommentti</h3>
-        <form>
-            <label for="message">Viesti:</label>
-            <textarea id="message" required></textarea>
-
-            <label for="email">Sähköpostiosoite:</label>
-            <input type="email" id="email" required>
-
-            <label for="birthdate">Syntymäpäivä:</label>
-            <input type="date" id="birthdate" required>
-
-            <label for="type">Valitse viestin tyyppi:</label>
-            <select id="type">
-                <option value="comment">Kommentti</option>
-                <option value="question">Kysymys</option>
-            </select>
-
-            <label>
-                <input type="checkbox" id="consent" required>
-                Hyväksyn, että tietojani voidaan käyttää markkinointiin
-            </label>
-
-            <button type="submit">Lähetä</button>
-            <button type="button" onclick="closeDialog()">Peruuta</button>
-        </form>
-    </div>
+            </ul>
+        </div>
+<section>
+            <h2>Keskustelusivu</h2>
+            <button onclick="openDialog()">Kommentoi</button>
+            <div id="overlay" onclick="closeDialog()"></div>
+            <div id="comment-dialog">
+                <h3>Kirjoita kommentti</h3>
+                <form>
+                    <label for="message">Viesti:</label>
+                    <textarea id="message" required></textarea>
+                    <label for="email">Sähköpostiosoite:</label>
+                    <input type="email" id="email" required>
+                    <label for="birthdate">Syntymäpäivä:</label>
+                    <input type="date" id="birthdate" required>
+                    <label for="type">Valitse viestin tyyppi:</label>
+                    <select id="type">
+                        <option value="comment">Kommentti</option>
+                        <option value="question">Kysymys</option>
+                    </select>
+                    <label>
+                        <input type="checkbox" id="consent" required>
+                        Hyväksyn, että tietojani voidaan käyttää markkinointiin
+                    </label>
+                    <button type="submit">Lähetä</button>
+                    <button type="button" onclick="closeDialog()">Peruuta</button>
+                </form>
+            </div>
 
     <h3>Aiemmat kommentit</h3>
     <div class="comment">
@@ -83,6 +86,7 @@
         <p><strong>Sähköposti:</strong> anonyymi@netti.fi</p>
         <p>Onko täällä joku joka osaisi vastata kysymykseeni? :C </p>
     </div>
+</section>
 </main>
 
     <script>
