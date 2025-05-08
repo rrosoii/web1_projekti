@@ -104,7 +104,7 @@ h4 {
     border-radius: 5px;
     cursor: pointer;
     background-color: #ffffff;
-    transition: background-color 0.2s;
+    transition: 0.2s;
 }
 .tyopaikka:hover {
     background-color: #f0f0f0;
@@ -200,3 +200,70 @@ footer {
     margin: 5px 0 0;
     font-weight: normal;
 }
+/* Alle 640px leveille näytöille */
+@media (max-width: 640px) {
+    body {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    nav {
+      display: block;
+    }
+  
+    nav a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    h1 {
+      font-size: 32px;
+    }
+  
+    h2 {
+      font-size: 26px;
+    }
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  }
+  
+  /* Yli 640px leveille näytöille */
+  @media (min-width: 641px) {
+    body {
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+  
+    nav {
+      display: flex;
+      gap: 2em;
+    }
+  
+    nav a {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  
+    h1 {
+      font-size: 60px;
+    }
+  
+    h2 {
+      font-size: 48px;
+    }
+  
+    h3 {
+      font-size: 32px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  }
+  
