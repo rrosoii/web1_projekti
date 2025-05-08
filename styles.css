@@ -8,6 +8,27 @@ body {
     color: #3b386d;
 }
 
+@font-face {
+    font-family: "My Special Font";
+    src: url("./fontit/Edu_QLD_Beginner/EduQLDBeginner-VariableFont_wght.ttf");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "My Special Font";
+    src: url("./fontit/Edu_QLD_Beginner/EduQLDBeginner-VariableFont_wght.ttf");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Leipateksti";
+    src: url("./fontit/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Leipateksti";
+    src: url("./fontit/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+    font-weight: bold;
+  }
+
 
 header {
     color: #8c8f96;
@@ -40,30 +61,39 @@ section {
     margin-bottom: 20px;
 }
 
+p {
+    font-family: "leipateksti";
+}
 /* heading */
 
 h1, h2 {
     margin-top: 20px;
     color: #4f75cc;
+    font-family: "My Special Font";
 }
 h3, h4 {
     margin-top: 20px;
     color:#87a0da
+    font-family: "My Special Font";
 }
 h1 {
     font-size: 60px;
+    font-family: "My Special Font";
 }
 
 h2 {
     font-size: 48px;
+    font-family: "My Special Font";
 }
 
 h3 {
     font-size: 32px;
+    font-family: "My Special Font";
 }
 
 h4 {
     font-size: 18px;
+    font-family: "My Special Font";
 }
 
 
