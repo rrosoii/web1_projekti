@@ -1,7 +1,7 @@
 /* perus */
 body {
     font-family: Arial, sans-serif;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 0 64px;
     background-color: #f0fcff;
@@ -41,6 +41,7 @@ section {
 }
 
 /* heading */
+
 h1, h2 {
     margin-top: 20px;
     color: #4f75cc;

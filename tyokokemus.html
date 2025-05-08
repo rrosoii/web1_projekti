@@ -16,65 +16,80 @@
     <header>
         <p>Rosanna Nikupeteri TIEV24N</p>
     </header>
-<main>
-    <h1>Rosannan Sivu 💤</h1>
-    <nav>
-        <a href="index.html">Etusivu</a>
-        <a href="tyokokemus.html">Työkokemus</a>
-        <a href="portfolio">Portfolio</a>
-    </nav>
-        <h2>Työkokemus</h2>
-
-    <section>
-        <div class="tyopaikka" onclick="toggleKuvaus(this)">
-            <p><strong>09/2025-011/2025</strong></p>
-            <h3>Epic Games (keksitty)</h3>
-            <div class="kuvaus">
-                <em>Ohjelmistokehittäjä</em><br>
-                <strong>Helsinki</strong>
-                <ul>
-                    <li>Kehitin koodia Easy Anti-Cheatille.</li>
-                </ul>
+    <main>
+        <div class="container">
+            <div class="title">
+                <h1>Rosannan Sivu 💤</h1>
             </div>
+  
+            <nav>
+                <a href="index.html">Etusivu</a>
+                <a href="tyokokemus.html">Työkokemus</a>
+                <a href="portfolio">Portfolio</a>
+            </nav>
+            <h2>Työkokemus</h2>
+  
+            <section>
+                <div class="tyopaikka" onclick="toggleKuvaus(this)">
+                    <p><strong>09/2025-011/2025</strong></p>
+                    <h3>Epic Games (keksitty)</h3>
+                </div>
+                <div class="kuvaus" style="display: none;">
+                    <em>Ohjelmistokehittäjä</em><br>
+                    <strong>Helsinki</strong>
+                    <ul>
+                        <li>Kehitin koodia Easy Anti-Cheatille.</li>
+                    </ul>
+                </div>
+            
+                <div class="tyopaikka" onclick="toggleKuvaus(this)">
+                    <p><strong>04/2024-05/2024</strong></p>
+                    <h3>HESBURGER</h3>
+                </div>
+                <div class="kuvaus" style="display: none;">
+                    <em>Kassa/keittiö</em><br>
+                    <strong>Pasila</strong>
+                    <ul>
+                        <li>Sain hyvin asiakaspalvelukokemusta.</li>
+                    </ul>
+                </div>
+            
+                <div class="tyopaikka" onclick="toggleKuvaus(this)">
+                    <p><strong>04/2025-05/2025</strong></p>
+                    <h3>S-Market</h3>
+                </div>
+                <div class="kuvaus" style="display: none;">
+                    <em>Hyllytys</em><br>
+                    <strong>Masala</strong>
+                    <ul>
+                        <li>Opin miten toimia työpaikalla.</li>
+                    </ul>
+                </div>
+            </section>
+                    </main>
+                        <footer>
+                            <a href="https://turku.inschool.fi/!02365172/">Wilma</a>
+                            <a href="https://taito.edu.turku.fi/my/">Moodle</a>
+                            <a href="https://tai.fi">TAI</a>
+                        </footer>
+
+                        
         </div>
 
-        <div class="tyopaikka" onclick="toggleKuvaus(this)">
-            <p><strong>04/2024-05/2024</strong></p>
-            <h3>HESBURGER</h3>
-            <div class="kuvaus">
-                <em>Kassa/keittiö</em><br>
-                <strong>Pasila</strong>
-                <ul>
-                    <li>Sain hyvin asiakaspalvelukokemusta.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="tyopaikka" onclick="toggleKuvaus(this)">
-            <p><strong>04/2025-05/2025</strong></p>
-            <h3>S-Market</h3>
-            <div class="kuvaus">
-                <em>Hyllytys</em><br>
-                <strong>Masala</strong>
-                <ul>
-                    <li>Opin miten toimia työpaikalla.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-</main>
-    <footer>
-        <a href="https://turku.inschool.fi/!02365172/">Wilma</a>
-        <a href="https://taito.edu.turku.fi/my/">Moodle</a>
-        <a href="https://tai.fi">TAI</a>
-    </footer>
-
-    <script>
-        function toggleKuvaus(element) {
-            let kuvaus = element.querySelector('.kuvaus');
-            kuvaus.style.display = (kuvaus.style.display === 'none' || kuvaus.style.display === '') ? 'block' : 'none';
-        }
-    </script>
-
+        <script>
+            function toggleKuvaus(element) {
+                const kuvaus = element.nextElementSibling;
+        
+                if (kuvaus && kuvaus.classList.contains('kuvaus')) {
+                    if (kuvaus.style.display === 'none' || kuvaus.style.display === '') {
+                        kuvaus.style.display = 'block'; 
+                    } else {
+                        kuvaus.style.display = 'none'; 
+                    }
+                }
+            }
+        </script>
+            
+        
 </body>
 </html>

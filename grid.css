@@ -1,15 +1,27 @@
-body {
+.container{
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
         "header"
+        "title"
         "nav"
         "content"
         "footer";
     min-height: 100vh;
     padding: 0;
-    max-width: 800px; 
+    max-width: 1000px; 
     margin: 20px auto;
+}
+
+.container > div {
+    
+}
+
+title {
+    grid-area: title;
+    text-align: center;
+    color: #08aa00;
+    padding: 1em 3em;
 }
 header {
     grid-area: header;
