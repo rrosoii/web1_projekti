@@ -42,7 +42,7 @@
             <div id="overlay" onclick="closeDialog()"></div>
             <div id="comment-dialog">
                 <h3>Kirjoita kommentti</h3>
-                <form>
+                <form onsubmit="send(event)">
                     <label for="message">Viesti:</label>
                     <textarea id="message" required></textarea>
                     <label for="email">Sähköpostiosoite:</label>
@@ -92,17 +92,6 @@
 </section>
 </main>
 
-    <script>
-        function openDialog() {
-            document.getElementById("comment-dialog").style.display = "block";
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function closeDialog() {
-            document.getElementById("comment-dialog").style.display = "none";
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
 
 <footer>
  <a href="https://turku.inschool.fi/!02365172/">Wilma</a>
