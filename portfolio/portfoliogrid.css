@@ -49,12 +49,19 @@ aside {
     background-color: #f0f0f0;
     padding: 10px;
     border-radius: 20px;
+    max-height: 200px;
 }
 
 section {
+    grid-column: 2;
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 10px;
+}
+section input {
+    width: 150px; /* Set the desired width */
+    padding: 5px; /* Add some padding for better appearance */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .layout {

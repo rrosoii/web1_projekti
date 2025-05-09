@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="portfolio, harjoituksia, Rosanna">
-    <meta name="description" content="Tältä sivulta löytyy Rosannan web-ohjelmointi harjoitukset.">
+    <meta name="description" content="Tältä sivulta löytyy muuntuja tehtävä.">
     <meta name="author" content="Rosanna N.">
-    <script src="portfolio.js" defer></script>
+    <script src="muuttujia.js" defer></script>
     <link rel="stylesheet" href="portfoliogrid.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -33,12 +33,25 @@
                 <li><a href="keskustelu.html">Keskustelusivu</a></li>
                 <li><a href="flex.html">Flex Harjoitus</a></li>
                 <li><a href="testi.html">Asettelu tehtävä</a></li>
-                <li><a href="muuttujia.html">Muuttujia ja tietotyyppejä</a></li>
             </ul>
         </div>
         <section>
-            <h2>Portfolio</h2>
-           <p> Täällä on minun HTML tehtäviä :3</p>
+            <h2>Muuttujat:</h2>
+            <button onclick="summa()">Summa</button>
+            <button onclick="vahennys()">Vähennys</button>
+            <button onclick="kerto()">Kerto</button>
+            <button onclick="jako()">Jako</button>
+        </section>
+        <section>
+            <h2>Laskin</h2>
+            <input type="number" id="numero1" placeholder="Ensimmäinen luku">
+            <input type="number" id="numero2" placeholder="Toinen luku"><br><br>
+            <button onclick="laskin_summa()">+</button>
+            <button onclick="laskin_vahennys()">−</button>
+            <button onclick="laskin_kerto()">×</button>
+            <button onclick="laskin_jako()">÷</button>
+        </section>
+          
     </div>
 </main>
 

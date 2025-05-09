@@ -23,7 +23,13 @@ nav.top-nav {
     background-color: rgb(249, 249, 249);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+a:hover {
+    color: #dbbd29;
+    text-decoration: underline;
+}
+a:visited {
+    color: #6b7280;
+}
 aside {
     float: left;
     width: 25%;
