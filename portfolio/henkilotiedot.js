@@ -1,4 +1,5 @@
 console.log("henkilotiedot on ladattu");
+
     const henkilot = [
         {
             name: "Merja Meikäläinen",
@@ -46,10 +47,16 @@ console.log("henkilotiedot on ladattu");
 
             const ikaTd = document.createElement("td");
             ikaTd.innerHTML = henkilo.age;
+            if (henkilo.age >= 18) {
+                ikaTd.innerHTML += " 🍺";
+            }
             rivi.appendChild(ikaTd);
 
             const tyoTd = document.createElement("td");
             tyoTd.innerHTML = henkilo.job;
+            if (henkilo.job.toLowerCase() === "opiskelija") {
+                tyoTd.innerHTML += " 🎓";
+            }
             rivi.appendChild(tyoTd);
 
             const ajokorttiTd = document.createElement("td");
@@ -58,6 +65,32 @@ console.log("henkilotiedot on ladattu");
 
             rivit.appendChild(rivi);
         }
+    }
+
+    function lisaaHenkilo(event) {
+        event.preventDefault();
+
+        const nimi = document.getElementById("nimi").value.trim();
+        const ika = Number(document.getElementById("ika").value);
+        const tyo = document.getElementById("tyo").value.trim();
+        const ajokortti = document.getElementById("ajokortti").checked;
+
+        if (ika < 0) {
+            alert("Iän pitää olla positiivinen luku");
+            return;
+        }
+
+        const uusiHenkilo = {
+            name: nimi,
+            age: ika,
+            job: tyo,
+            driversLicense: ajokortti
+        };
+
+        henkilot.push(uusiHenkilo);
+        luoRivit();
+
+        document.getElementById("henkiloLomake").reset();
     }
 
     window.onload = luoRivit;

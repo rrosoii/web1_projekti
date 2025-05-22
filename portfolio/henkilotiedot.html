@@ -52,6 +52,16 @@
                 
             </tbody>
         </table>
+
+        <h3>Lisää uusi henkilö:</h3>
+        <form id="henkiloLomake" onsubmit="lisaaHenkilo(event)">
+            <label>Nimi: <input type="text" id="nimi" required></label><br>
+            <label>Ikä: <input type="number" id="ika" required></label><br>
+            <label>Työ: <input type="text" id="tyo" required></label><br>
+            <label>Ajokortti: <input type="checkbox" id="ajokortti"></label><br>
+            <button type="submit">Lähetä</button>
+        </form>
+
     </section>   
     </div>
 </main>
