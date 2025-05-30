@@ -42,6 +42,40 @@ function laskin_jako() {
     jako(eka, toka);
 }
 
+function laskin_abs() {
+    let eka = Number(document.getElementById("numero1").value);
+    alert("Itseisarvo: " + Math.abs(eka));
+}
+
+function laskin_sqrt() {
+    let eka = Number(document.getElementById("numero1").value);
+    alert("Neliöjuuri: " + Math.sqrt(eka));
+}
+
+function laskin_pow() {
+    let eka = Number(document.getElementById("numero1").value);
+    let toka = Number(document.getElementById("numero2").value);
+    alert("Potenssi: " + Math.pow(eka, toka));
+}
+
+function laskin_max() {
+    let eka = Number(document.getElementById("numero1").value);
+    let toka = Number(document.getElementById("numero2").value);
+    alert("Suurempi luku: " + Math.max(eka, toka));
+}
+
+function laskin_min() {
+    let eka = Number(document.getElementById("numero1").value);
+    let toka = Number(document.getElementById("numero2").value);
+    alert("Pienempi luku: " + Math.min(eka, toka));
+}
+
+function laskin_round() {
+    let eka = Number(document.getElementById("numero1").value);
+    alert("Pyöristetty: " + Math.round(eka));
+}
+
+
 function naytaPaivamaaraJaAika() {
     const nyt = new Date();
 
