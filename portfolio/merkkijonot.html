@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portfolio, harjoituksia, Rosanna">
+    <meta name="description" content="Tältä sivulta löytyy merkkijono tehtäviä.">
+    <meta name="author" content="Rosanna N.">
+    <script src="merkkijonot.js" defer></script>
+    <link rel="stylesheet" href="portfoliogrid.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <p>Rosanna Nikupeteri TIEV24N</p>
+    </header>
+
+    
+<main>
+    <h1>Rosannan Sivu 💤</h1>
+    <nav>
+        <a href="../index.html">Etusivu</a>
+        <a href="../tyokokemus.html">Työkokemus</a>
+        <a href="index.html">Portfolio</a>
+    </nav>
+
+    <div class="layout">
+        <div class="sivunav">
+            <ul>
+                <li><a href="keskustelu.html">Keskustelusivu</a></li>
+                <li><a href="flex.html">Flex Harjoitus</a></li>
+                <li><a href="testi.html">Asettelu tehtävä</a></li>
+                <li><a href="muuttujia.html">Muuttujia ja tietotyyppejä</a></li>
+                <li><a href="tehtavalista.html">Tehtävä lista</a></li>
+                <li><a href="henkilotiedot.html">Henkilötiedot</a></li>
+            </ul>
+        </div>
+        <section>
+            <h2>Merkkijonot</h2>
+            <h3>Poimi kirjain</h3>
+            <input type="text" id="teksti1" placeholder="Syötä teksti">
+            <input type="number" id="indeksi1" placeholder="Syötä indeksi">
+            <button onclick="poimiKirjain()">Näytä</button>
+            <div id="tulos1"></div>
+
+            <h3>Löydä indeksi</h3>
+            <input type="text" id="teksti2" placeholder="Koko teksti">
+            <input type="text" id="etsittava" placeholder="Etsittävä merkki/sana">
+            <button onclick="loydaIndeksi()">Näytä</button>
+            <div id="tulos2"></div>
+
+            <h3>Leikkaa merkkijono</h3>
+            <input type="text" id="teksti3" placeholder="Syötä teksti">
+            <input type="number" id="alku" placeholder="Alkuindeksi">
+            <input type="number" id="loppu" placeholder="Loppuindeksi">
+            <button onclick="leikkaaMerkkijono()">Näytä</button>
+            <div id="tulos3"></div>
+
+            <h3>Etsi ja korvaa</h3>
+            <input type="text" id="teksti4" placeholder="Syötä teksti">
+            <input type="text" id="etsittava4" placeholder="Etsi tämä">
+            <input type="text" id="korvaus" placeholder="Korvaa tällä">
+            <button onclick="etsiJaKorvaa()">Näytä</button>
+            <div id="tulos4"></div>
+
+            <h3>Poikki ja pinoon</h3>
+            <input type="text" id="teksti5" placeholder="Syötä teksti">
+            <input type="text" id="erotin" placeholder="Erotinmerkki">
+            <button onclick="poikkiJaPinoon()">Näytä</button>
+            <ul id="tulos5"></ul>
+        </section>
+    </div>
+</main>
+
+<footer>
+ <a href="https://turku.inschool.fi/!02365172/">Wilma</a>
+ <a href="https://taito.edu.turku.fi/my/">Moodle</a>
+ <a href="https://tai.fi">TAI</a>
+ </footer>
+</body>
+</html>
